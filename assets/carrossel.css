@@ -1,0 +1,44 @@
+.swiper {
+  width: 100%;
+  height: calc(100vh - 68px);
+}
+
+.slide-1 {
+  background-image: url("./images/vila-noite.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-2 {
+  background-image: url("./images/estadio-espanha.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-3 {
+  background-image: url("./images/estadio-ps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-button-prev {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 9999px;
+  padding: 2.5rem;
+  scale: 0.7;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.swiper-button-next {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 9999px;
+  padding: 2.5rem;
+  scale: 0.7;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.swiper-scrollbar-drag, .swiper-pagination-bullet-active {
+    background: #FFF;
+}
