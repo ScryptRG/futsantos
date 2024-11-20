@@ -69,6 +69,20 @@ a {
   
 }
 
+footer{
+  background-color: #000;
+  height: 12vh;
+  padding: 2vh;
+  color: #fff;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+
+strong{
+  font-weight: bolder;
+}
 /* Custom styles */
 
 body {
