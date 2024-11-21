@@ -1,22 +1,22 @@
 .swiper {
   width: 100%;
-  height: calc(100vh - 68px);
+  height: 100vh;
 }
 
 .slide-1 {
-  background-image: url("./images/vila-noite.jpg");
+  background-image: url("./images/1.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slide-2 {
-  background-image: url("./images/estadio-espanha.png");
+  background-image: url("./images/2.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slide-3 {
-  background-image: url("./images/estadio-ps.png");
+  background-image: url("./images/3.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
