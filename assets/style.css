@@ -14,7 +14,7 @@
   padding: 10px 24px;
   font-size: 18px;
   color: #fff;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   border-radius: 34px;
   background-color: #000;
   font-weight: 600;
@@ -59,6 +59,19 @@ header a:hover{
 color: #fff;
 }
 
+
+.nav-list {
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+  gap: 32px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 header a{
   transition: ease 300ms;
 }
@@ -77,6 +90,26 @@ footer{
   margin: 0;
   display: block;
   text-align: center;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
 }
 
 
@@ -116,7 +149,7 @@ header.rolagem{
   
 }
 
-header.rolagem button{
+header.rolagem .button{
   color: #000;
   background-color: #fff;
   
@@ -222,14 +255,78 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    display: none;
+
+
+  .hamburger {
+    display: block;
+    z-index: 1;
   }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    clip-path: circle(100px at 0% -15%);
+    transition: 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 0% 0%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 70px;
+    left: 1px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+ 
 }
 
-@media screen and (max-width: 1024px) {
-  .evento,
-  .sobre-futsantos {
-    justify-content: center;
-  }
-}
+
+
+

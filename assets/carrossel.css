@@ -42,3 +42,21 @@
 .swiper-scrollbar-drag, .swiper-pagination-bullet-active {
     background: #FFF;
 }
+
+@media screen and (max-width: 768px){
+  .slide-1{
+    background-image: url("./images/1-mobile.webp");
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .slide-2{
+    background-image: url("./images/2-mobile.webp");
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .slide-3{
+    background-image: url("./images/3-mobile.webp");
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+}
