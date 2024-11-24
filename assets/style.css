@@ -276,7 +276,7 @@ main {
     flex-direction: column;
     gap: 0;
     padding: 20px;
-
+    justify-content: center;
     pointer-events: none;
   }
 
